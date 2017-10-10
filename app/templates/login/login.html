@@ -1,0 +1,72 @@
+<form novalidate ng-submit="vm.login()" name="loginForm" class="login" ng-if="!vm.registrateIs">
+    <md-content class="md-no-momentum" layout-padding>
+        <div class="btn-container">
+            <h2>Авторизация на <h1>KORMETEO</h1></h2>
+        </div>
+        <md-input-container class="md-icon-float md-block">
+            <!-- Use floating label instead of placeholder -->
+            <label>Эл.почта</label>
+            <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+            <input name="clientEmail"  minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" ng-model="vm.user.mail" required type="email" ng-mouseenter="vm.validMail()" ng-mouseleave="vm.validMail2()">
+
+            <div ng-messages="loginForm.clientEmail.$error" role="alert">
+                <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    Электронный адрес должен быть не короче 10 символов и быть в соответствующем формате.
+                </div>
+            </div>
+        </md-input-container>
+
+        <md-input-container class="md-icon-float md-block">
+            <!-- Use floating label instead of placeholder -->
+            <label>Пароль</label>
+            <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+            <input ng-model="vm.user.password" type="password">
+        </md-input-container>
+        <div class="btn-container">
+            <md-button type="submit" class="md-raised md-primary">
+                Войти
+            </md-button>
+            <a ng-click="vm.registrateIs=true" href="">
+                Регистрация
+            </a>
+        </div>
+
+    </md-content>
+</form>
+<form novalidate ng-submit="vm.registrate()" name="registrateForm" class="login" ng-if="vm.registrateIs">
+    <md-content class="md-no-momentum" layout-padding>
+        <div class="btn-container">
+            <h2>Регистрация нового пользователя</h2>
+        </div>
+        <md-input-container class="md-icon-float md-block">
+            <!-- Use floating label instead of placeholder -->
+            <label>Эл.почта{{vm.monstro}}</label>
+            <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+            <input name="clientEmail"  minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" ng-model="vm.user.mail" required type="email" ng-mouseenter="vm.validMail()" ng-mouseleave="vm.validMail2()">
+
+            <div ng-messages="registrateForm.clientEmail.$error" role="alert">
+                <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    Электронный адрес должен быть не короче 10 символов и быть в соответствующем формате.
+                </div>
+            </div>
+
+        </md-input-container>
+
+        <md-input-container class="md-icon-float md-block">
+            <!-- Use floating label instead of placeholder -->
+            <label>Пароль{{vm.zombi}}</label>
+            <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+            <input ng-model="vm.user.password" type="password" ng-mouseenter="vm.validPass()" ng-mouseleave="vm.validPass2()">
+        </md-input-container>
+        <div class="btn-container">
+            <md-button type="submit" class="md-raised md-primary">
+                Зарегистрироваться
+            </md-button>
+            <a ng-click="vm.registrateIs=false" href="">
+                Войти, я надумал
+            </a>
+
+        </div>
+
+    </md-content>
+</form>

@@ -1,0 +1,151 @@
+<div class="homepage" style="max-width: 80%; margin: auto">
+    <div style="float: left" class="md-padding" ng-cloak>
+        <div>
+            <h1 class="md-title">Выберите интересующий вас город</h1>
+            <div layout="row">
+                <md-input-container style="width: 100%;">
+                    <label>Город</label>
+                    <md-select ng-model="vm.selectedCity" ng-change="vm.selectCity(vm.selectedCity)">
+                        <md-optgroup label="города">
+                            <md-option ng-value="city" ng-repeat="city in vm.cities track by city.id">{{city.name}}</md-option>
+                        </md-optgroup>
+                    </md-select>
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+    <div style="float: left" class="md-padding" ng-cloak>
+        <div>
+            <h1 class="md-title">Выберите год метеонаблюдений</h1>
+            <div layout="row">
+                <md-input-container style="width: 100%;">
+                    <label>Года</label>
+                    <md-select ng-model="vm.selectedYear" >
+                        <md-optgroup label="Года">
+                            <md-option  ng-value="" selected>За весь период</md-option>
+                            <md-option ng-value="year" ng-repeat="year in vm.years track by $index">Год {{year}}</md-option>
+                        </md-optgroup>
+                    </md-select>
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+    <div style="float: left" class="md-padding" ng-cloak>
+        <div>
+            <h1 class="md-title">Выберите требуемый месяц года</h1>
+            <div layout="row">
+                <md-input-container style="width: 100%;">
+                    <label>Месяц</label>
+                    <md-select ng-model="vm.selectedMonth" >
+                        <md-optgroup label="Месяц">
+                            <md-option  ng-value="" selected>За весь год</md-option>
+                            <md-option ng-value="month" ng-repeat="month in vm.months">{{month}}</md-option>
+                        </md-optgroup>
+                    </md-select>
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+
+<div style="padding: 1%" ng-show="vm.selectedCity">
+    <table style="border: 1px solid lightgray" class="table table-striped">
+        <thead>
+        <tr>
+            <th ng-click="vm.sort('year')">
+                Год
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-up':vm.isSortUp('year'),
+                                                    'glyphicon-chevron-down':vm.isSortDown('year'),
+                                                    'glyphicon-sort':!vm.sortField ||
+                                                    vm.sortField == 'month' || vm.sortField == 'tmax' ||
+                                                    vm.sortField == 'tmin' || vm.sortField == 'af' ||
+                                                    vm.sortField == 'rain' || vm.sortField == 'sun'
+                   }"></i>
+            </th>
+            <th ng-click="vm.sort('month')">
+                Месяц
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-up':vm.isSortUp('month'),
+                                                    'glyphicon-chevron-down':vm.isSortDown('month'),
+                                                     'glyphicon-sort': !vm.sortField ||
+                                                    vm.sortField == 'year' || vm.sortField == 'tmax' ||
+                                                    vm.sortField == 'tmin' || vm.sortField == 'af' ||
+                                                    vm.sortField == 'rain' || vm.sortField == 'sun'
+                   }"></i>
+            </th>
+            <th ng-click="vm.sort('tmax')">
+                Т(макс)
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-up':vm.isSortUp('tmax'),
+                                                    'glyphicon-chevron-down':vm.isSortDown('tmax'),
+                                                         'glyphicon-sort': !vm.sortField ||
+                                                    vm.sortField == 'year' || vm.sortField == 'month' ||
+                                                    vm.sortField == 'tmin' || vm.sortField == 'af' ||
+                                                    vm.sortField == 'rain' || vm.sortField == 'sun'
+                   }"></i>
+            </th>
+            <th ng-click="vm.sort('tmin')">
+                Т(мин)
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-up':vm.isSortUp('tmin'),
+                                                    'glyphicon-chevron-down':vm.isSortDown('tmin'),
+                                                        'glyphicon-sort': !vm.sortField ||
+                                                    vm.sortField == 'year' || vm.sortField == 'month' ||
+                                                    vm.sortField == 'tmax' || vm.sortField == 'af' ||
+                                                    vm.sortField == 'rain' || vm.sortField == 'sun'
+                   }"></i>
+            </th>
+            <th ng-click="vm.sort('af')">
+                аф
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-up':vm.isSortUp('af'),
+                                                    'glyphicon-chevron-down':vm.isSortDown('af'),
+                                                           'glyphicon-sort': !vm.sortField ||
+                                                    vm.sortField == 'year' || vm.sortField == 'month' ||
+                                                    vm.sortField == 'tmax' || vm.sortField == 'tmin' ||
+                                                    vm.sortField == 'rain' || vm.sortField == 'sun'
+                   }"></i>
+            </th>
+            <th ng-click="vm.sort('rain')">
+                Осадки
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-up':vm.isSortUp('rain'),
+                                                    'glyphicon-chevron-down':vm.isSortDown('rain'),
+                                                          'glyphicon-sort': !vm.sortField ||
+                                                    vm.sortField == 'year' || vm.sortField == 'month' ||
+                                                    vm.sortField == 'tmax' || vm.sortField == 'tmin' ||
+                                                    vm.sortField == 'af' || vm.sortField == 'sun'
+                   }"></i>
+            </th>
+            <th ng-click="vm.sort('sun')">
+                Солнцестояние
+                <i class="glyphicon" ng-class="{'glyphicon-chevron-up':vm.isSortUp('sun'),
+                                                    'glyphicon-chevron-down':vm.isSortDown('sun'),
+                                                        'glyphicon-sort': !vm.sortField ||
+                                                    vm.sortField == 'year' || vm.sortField == 'month' ||
+                                                    vm.sortField == 'tmax' || vm.sortField == 'tmin' ||
+                                                    vm.sortField == 'af' || vm.sortField == 'rain'
+                   }"></i>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="weather in vm.weathers | filter: {year:vm.selectedYear, month:vm.selectedMonth} | orderBy:vm.sortField:vm.reverse track by $index">
+                <td ng-bind="weather.year"></td>
+                <td ng-bind="weather.month"></td>
+                <td ng-bind="weather.tmax"></td>
+                <td ng-bind="weather.tmin"></td>
+                <td ng-bind="weather.af"></td>
+                <td ng-bind="weather.rain"></td>
+                <td ng-bind="weather.sun"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+  <!--<div class="title">-->
+        <!--Погода в городе <b>{{vm.weather.name}}</b>-->
+    <!--</div>-->
+   <!--<div class="temp">-->
+        <!--Температура: {{vm.weather.main.temp}}-->
+    <!--</div>-->
+   <!--<div class="wind">-->
+        <!--Ветер: {{vm.weather.wind.speed}}м/с-->
+    <!--</div>-->
+  <!--{{vm.weather}}-->
+</div>

@@ -1,0 +1,47 @@
+.homepage .title {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 15px; }
+
+.homepage .temp, .homepage .wind {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background: #fefefe; }
+
+.homepage .glyphicon {
+  font-size: smaller; }
+
+.homepage .selectdemoSelectHeader {
+  /* Please note: All these selectors are only applied to children of elements with the 'selectdemoSelectHeader' class */ }
+
+.homepage .selectdemoSelectHeader .demo-header-searchbox {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 0; }
+
+.homepage .selectdemoSelectHeader .demo-select-header {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  padding-left: 10.667px;
+  height: 48px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: auto; }
+
+.homepage .selectdemoSelectHeader md-content._md {
+  max-height: 240px; }
+
+.login {
+  background: white;
+  max-width: 800px;
+  min-width: 200px;
+  margin: 0 auto; }
+  .login .btn-container {
+    text-align: center; }
+
+md-content.md-default-theme, md-content {
+  background-color: transparent; }

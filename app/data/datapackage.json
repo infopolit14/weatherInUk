@@ -1,0 +1,245 @@
+{
+  "description": "Monthly Historical information for 37 UK Meteorological Stations. Most go back to the early 1900s, but some go back as far as 1853.\r\n\r\nData includes:\r\n\r\n* Mean maximum temperature (tmax)\r\n* Mean minimum temperature (tmin)\r\n* Days of air frost (af)\r\n* Total rainfall (rain)\r\n* Total sunshine duration (sun) \r\n\r\nStation data files are updated on a rolling monthly basis, around 10 days after the end of the month. Data are indicated as provisional until the full network quality control has been carried out. After this, data are final.\r\n\r\nNo allowances have been made for small site changes and developments in instrumentation.\r\n\r\nData and statistics for other stations, and associated charges, can be obtained by contacting our Customer Centre.",
+  "filepath": "/media/hulk/packagezip/historic-monthly-meteorological-station-data.zip",
+  "id": "17ba3bbe-0e98-4a8c-9937-bd1d50fdc3c5",
+  "license": "OGL-UK-3.0",
+  "name": "historic-monthly-meteorological-station-data",
+  "resources": [
+    {
+      "description": "Guide for loading this data into Microsoft Excel",
+      "format": "HTML",
+      "path": "data/import",
+      "url": "http://www.metoffice.gov.uk/climate/uk/about/station-data/import"
+    },
+    {
+      "description": "About this Historic Station Data",
+      "format": "HTML",
+      "path": "data/resource",
+      "reason": "Server reported status error: 404 Not Found",
+      "url": "http://www.metoffice.gov.uk/climate/uk/stationdata/"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Aberporth",
+      "format": "TXT",
+      "path": "data/aberporthdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/aberporthdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Armagh",
+      "format": "TXT",
+      "path": "data/armaghdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/armaghdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Ballypatrick Forest",
+      "format": "TXT",
+      "path": "data/ballypatrickdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/ballypatrickdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Bradford",
+      "format": "TXT",
+      "path": "data/bradforddata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/bradforddata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Braemar",
+      "format": "TXT",
+      "path": "data/braemardata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/braemardata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Camborne",
+      "format": "TXT",
+      "path": "data/cambornedata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cambornedata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Cambridge NIAB",
+      "format": "TXT",
+      "path": "data/cambridgedata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cambridgedata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Cardiff Bute Park",
+      "format": "TXT",
+      "path": "data/cardiffdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cardiffdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Chivenor",
+      "format": "TXT",
+      "path": "data/chivenordata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/chivenordata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Cwmystwyth",
+      "format": "TXT",
+      "path": "data/cwmystwythdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cwmystwythdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Dunstaffnage",
+      "format": "TXT",
+      "path": "data/dunstaffnagedata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/dunstaffnagedata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Durham",
+      "format": "TXT",
+      "path": "data/durhamdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/durhamdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Eastbourne",
+      "format": "TXT",
+      "path": "data/eastbournedata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/eastbournedata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Eskdalemuir",
+      "format": "TXT",
+      "path": "data/eskdalemuirdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/eskdalemuirdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Heathrow",
+      "format": "TXT",
+      "path": "data/heathrowdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/heathrowdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Hurn",
+      "format": "TXT",
+      "path": "data/hurndata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/hurndata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Lerwick",
+      "format": "TXT",
+      "path": "data/lerwickdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/lerwickdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Leuchars",
+      "format": "TXT",
+      "path": "data/leucharsdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/leucharsdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Lowestoft",
+      "format": "TXT",
+      "path": "data/lowestoftdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/lowestoftdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Manston",
+      "format": "TXT",
+      "path": "data/manstondata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/manstondata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Nairn",
+      "format": "TXT",
+      "path": "data/nairndata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/nairndata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Newton Rigg",
+      "format": "TXT",
+      "path": "data/newtonriggdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/newtonriggdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Oxford",
+      "format": "TXT",
+      "path": "data/oxforddata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/oxforddata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Paisley",
+      "format": "TXT",
+      "path": "data/paisleydata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/paisleydata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Ringway",
+      "format": "TXT",
+      "path": "data/ringwaydata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/ringwaydata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Ross-on-Wye",
+      "format": "TXT",
+      "path": "data/rossonwyedata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/rossonwyedata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Shawbury",
+      "format": "TXT",
+      "path": "data/shawburydata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/shawburydata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Sheffield",
+      "format": "TXT",
+      "path": "data/sheffielddata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/sheffielddata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Southampton",
+      "format": "TXT",
+      "path": "data/southamptondata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/southamptondata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Stornoway Airport",
+      "format": "TXT",
+      "path": "data/stornowaydata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/stornowaydata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Sutton Bonington",
+      "format": "TXT",
+      "path": "data/suttonboningtondata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/suttonboningtondata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Tiree",
+      "format": "TXT",
+      "path": "data/tireedata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/tireedata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Valley",
+      "format": "TXT",
+      "path": "data/valleydata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/valleydata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Waddington",
+      "format": "TXT",
+      "path": "data/waddingtondata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/waddingtondata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Whitby",
+      "format": "TXT",
+      "path": "data/whitbydata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/whitbydata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Wick Airport",
+      "format": "TXT",
+      "path": "data/wickairportdata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/wickairportdata.txt"
+    },
+    {
+      "description": "Historical monthly data for meteorological station Yeovilton",
+      "format": "TXT",
+      "path": "data/yeoviltondata.txt",
+      "url": "http://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/yeoviltondata.txt"
+    }
+  ],
+  "title": "Historical monthly data for meteorological stations"
+}
